@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background: #FFFDF7;
+  color: #1A1A1A;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #1A1A1A;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* Hard-shadow card */
+.nb-card {
+  border: 3px solid #1A1A1A;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0px 0px #1A1A1A;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nb-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px #1A1A1A;
+}
+
+/* Buttons */
+.nb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 3px solid #1A1A1A;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px 0px #1A1A1A;
+  transition: transform 0.1s, box-shadow 0.1s;
+  text-decoration: none;
+  color: #1A1A1A;
+  white-space: nowrap;
+}
+
+.nb-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #1A1A1A;
+}
+
+.nb-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #1A1A1A;
+}
+
+.nb-btn-yellow { background: #FFE566; }
+.nb-btn-pink { background: #FF6B9D; }
+.nb-btn-blue { background: #6BB5FF; }
+.nb-btn-green { background: #7BEA7B; }
+.nb-btn-white { background: #FFFFFF; }
+.nb-btn-fg { background: #1A1A1A; color: #FFFDF7; }
+
+/* Sticker */
+.sticker {
+  display: inline-block;
+  border: 3px solid #1A1A1A;
+  border-radius: 100px;
+  padding: 6px 18px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Section borders */
+.section-border-top { border-top: 3px solid #1A1A1A; }
+.section-border-bottom { border-bottom: 3px solid #1A1A1A; }
